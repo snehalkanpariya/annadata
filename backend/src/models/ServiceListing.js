@@ -58,6 +58,11 @@ const serviceListingSchema = new mongoose.Schema(
             horsePower: { type: Number },
             fuelType: { type: String },
             modelYear: { type: Number }
+        },
+        ratings:{
+           average:{ type:Number,default:0,min:0,max:5},
+           count:{ type:Number,default:0 }
+
         }
     },
     { timestamps: true }
